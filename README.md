@@ -29,6 +29,6 @@ Asp.net core 2.1 api example with swagger integration.
 ## Controllers Example
 
 <div align="center">
-<img src="./todoapi/wwwroot/images/image4.png" width=100%/>
+<img src="todoapi/wwwroot/images/image4.png" width=100%/>
 </div>
 
