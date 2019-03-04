@@ -4,7 +4,9 @@ Asp.net core 2.1 api example with swagger integration.
 ﻿# ASP.Net Core API Example with Swagger
 
 ```
-> git clone
+> git clone https://github.com/jwill9999/ASP.net-core-swagger.git
+
+> open and run in Visual Studio
 
 
 ```
