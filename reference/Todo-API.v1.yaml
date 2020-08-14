@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Todo API
+  version: '1.0'
+  description: Todo API
+  contact:
+    name: Christina Wei
+    email: christina_wei@manulife.com
+  termsOfService: Do anything!
+servers:
+  - url: 'http://todos.stoplight.io/internal'
+    description: Internal
+  - description: ABC
+    url: 'http://todos.stoplight.io/abc'
+paths:
+  /:
+    get:
+      summary: Get
+      tags:
+        - EmergingTech
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+            application/xml:
+              schema:
+                type: object
+                properties: {}
+      operationId: get
+      description: ''
+    post:
+      summary: Post
+      tags:
+        - EmergingTech
+      responses: {}
+      operationId: post
+components:
+  schemas: {}
+  securitySchemes: {}
