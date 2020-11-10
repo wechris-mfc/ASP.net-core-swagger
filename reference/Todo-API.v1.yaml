@@ -8,36 +8,22 @@ info:
     email: christina_wei@manulife.com
   termsOfService: Do anything!
 servers:
-  - url: 'http://todos.stoplight.io/internal'
+  - url: 'http://todos.stoplight.io'
     description: Internal
-  - description: ABC
-    url: 'http://todos.stoplight.io/abc'
 paths:
-  /:
+  '/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
     get:
-      summary: Get
-      tags:
-        - EmergingTech
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties: {}
-            application/xml:
-              schema:
-                type: object
-                properties: {}
-      operationId: get
-      description: ''
-    post:
-      summary: Post
-      tags:
-        - EmergingTech
+      summary: get todo by ID
+      tags: []
       responses: {}
-      operationId: post
+      operationId: get-id
+      description: ''
 components:
   schemas: {}
   securitySchemes: {}
