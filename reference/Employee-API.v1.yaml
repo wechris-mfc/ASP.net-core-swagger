@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Employee API
+  version: '1.0'
+servers:
+  - url: 'https://employee-lookup-service-prod.apps.cac.pcf.manulife.com/api/'
+paths:
+  '/employee/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: get employee by ID
+      tags: []
+      responses: {}
+      operationId: get-employee-id
+components:
+  schemas: {}
